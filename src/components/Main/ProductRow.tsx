@@ -1,11 +1,5 @@
-import React from 'react'
-
 const ProductRow = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  return <div></div>;
+};
 
-export default ProductRow
+export default ProductRow;
