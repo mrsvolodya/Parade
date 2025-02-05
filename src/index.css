@@ -9,18 +9,27 @@
 
 @font-face {
   font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
   src: url("./assets/fonts/Montserrat-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 
+html,
+body,
 :root {
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
   font-weight: normal;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: #fff;
   background-color: #242424;
 
   font-synthesis: none;
@@ -29,6 +38,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 @theme {
-  --color-header: #222222;
+  --color-header-bg: #222222;
+  --color-yellow: #f4c93f;
+  --color-second-bg: #363f4f;
+  --color-second-text: #222222;
+  --color-border-color: #9a9fa7;
 }
