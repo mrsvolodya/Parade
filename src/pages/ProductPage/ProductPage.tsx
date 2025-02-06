@@ -1,6 +1,6 @@
 import ProductTable from "../../components/Main/ProductTable/ProductTable";
 import SearchBar from "../../components/Main/SearchBar/SearchBar";
-import SubmitBtn from "../../components/uiElements/SubmitBtn";
+import SubmitBtn from "../../components/UIElements/SubmitBtn";
 
 const ProductPage = () => {
   return (

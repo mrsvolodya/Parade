@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import cn from "classnames";
-import ArrowRightIcon from "../../uiElements/ArrowRightIcon";
+import ArrowRightIcon from "../../UIElements/ArrowRightIcon";
 
 interface SideBarItemProps {
   title: string;
