@@ -30,8 +30,6 @@ const ProductProvider = ({ children }: ProductProviderProps) => {
     loadProducts();
   }, [itemsPerPage, currentPage, searchQuery]);
 
-  console.log(pagination);
-
   const values = useMemo(
     () => ({
       currentPage,
