@@ -1,7 +1,17 @@
-import { PaginationType } from "./PaginationType";
-import { ProductType } from "./ProductType";
-
 export type ApiResponse = {
-  Items: ProductType;
-  Pagination: PaginationType;
+  Items: {
+    Id: number;
+    Image: string;
+    Name: string;
+    Category: string;
+    ProductPrice: number;
+    Country: string[];
+    Status: string;
+  };
+  Pagination: {
+    CurrentPage: number;
+    ItemsPerPage: number;
+    NumberOfPages: number;
+    TotalItemsCount: number;
+  };
 };

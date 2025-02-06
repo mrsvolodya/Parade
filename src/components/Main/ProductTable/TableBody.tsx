@@ -8,7 +8,7 @@ const TableBody = () => {
   return (
     <tbody>
       {products?.map((product) => (
-        <TableRow key={product.Id} product={product} />
+        <TableRow key={product.id} product={product} />
       ))}
     </tbody>
   );

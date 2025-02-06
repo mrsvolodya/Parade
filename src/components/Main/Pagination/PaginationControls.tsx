@@ -18,7 +18,7 @@ const PaginationControls = () => {
 
   const nextPage = () => {
     setCurrentPage((prevPage) => {
-      if (pagination.NumberOfPages > prevPage) {
+      if (pagination.numberOfPages > prevPage) {
         return prevPage + 1;
       }
 
@@ -35,7 +35,7 @@ const PaginationControls = () => {
         <img src={LeftIcon} alt="Left arrow" />
       </button>
       <span className="text-second-text border border-border-color rounded bg-white-100 w-20 h-10 flex items-center justify-center">
-        {pagination.CurrentPage}
+        {pagination.currentPage}
       </span>
       <button
         className="w-10 h-10  rounded  bg-bg-button hover:bg-gray-400 mr-[30px] cursor-pointer flex items-center justify-center"

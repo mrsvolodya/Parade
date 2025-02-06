@@ -21,20 +21,20 @@ export const fetchProducts = async (query = "", limit = 10, page = 1) => {
       : [];
 
     const items: ProductType[] = itemsArray.map((item) => ({
-      Id: item.Id,
-      Image: item.Image,
-      Name: item.Name,
-      Category: item.Category || "Uncategorized",
-      ProductPrice: item.ProductPrice || 0,
-      Country: item.Country || ["Unknown"],
-      Status: item.Status || "Unknown",
+      id: item.Id,
+      image: item.Image,
+      name: item.Name,
+      category: item.Category || "Uncategorized",
+      productPrice: item.ProductPrice || 0,
+      country: item.Country || ["Unknown"],
+      status: item.Status || "Unknown",
     }));
 
     const pagination: PaginationType = {
-      CurrentPage: response.data.Pagination.CurrentPage || 1,
-      ItemsPerPage: response.data.Pagination.ItemsPerPage || 10,
-      NumberOfPages: response.data.Pagination.NumberOfPages || 1,
-      TotalItemsCount: response.data.Pagination.TotalItemsCount || 0,
+      currentPage: response.data.Pagination.CurrentPage || 1,
+      itemsPerPage: response.data.Pagination.ItemsPerPage || 10,
+      numberOfPages: response.data.Pagination.NumberOfPages || 1,
+      totalItemsCount: response.data.Pagination.TotalItemsCount || 0,
     };
 
     return { items, pagination };
@@ -43,10 +43,10 @@ export const fetchProducts = async (query = "", limit = 10, page = 1) => {
     return {
       items: [],
       pagination: {
-        CurrentPage: 1,
-        ItemsPerPage: 10,
-        NumberOfPages: 1,
-        TotalItemsCount: 0,
+        currentPage: 1,
+        itemsPerPage: 10,
+        numberOfPages: 1,
+        totalItemsCount: 0,
       },
     };
   }

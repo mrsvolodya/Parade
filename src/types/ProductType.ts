@@ -1,9 +1,9 @@
 export type ProductType = {
-  Id: number;
-  Image: string;
-  Name: string;
-  Category: string;
-  ProductPrice: number;
-  Country: string[];
-  Status: string;
+  id: number;
+  image: string;
+  name: string;
+  category: string;
+  productPrice: number;
+  country: string[];
+  status: string;
 };

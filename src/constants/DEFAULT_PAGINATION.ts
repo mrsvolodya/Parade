@@ -1,8 +1,8 @@
 import { PaginationType } from "../types/PaginationType";
 
 export const DEFAULT_PAGINATION: PaginationType = {
-  CurrentPage: 1,
-  ItemsPerPage: 10,
-  NumberOfPages: 1,
-  TotalItemsCount: 0,
+  currentPage: 1,
+  itemsPerPage: 10,
+  numberOfPages: 1,
+  totalItemsCount: 0,
 };

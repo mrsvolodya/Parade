@@ -4,9 +4,9 @@ import { ProductContext } from "../../../context/ProductContext";
 
 const Pagination = () => {
   const { pagination, setItemsPerPage } = useContext(ProductContext);
-  const { CurrentPage, ItemsPerPage, TotalItemsCount } = pagination;
-  const to = Math.min(CurrentPage * ItemsPerPage, TotalItemsCount);
-  const from = to - (ItemsPerPage - 1);
+  const { currentPage, itemsPerPage, totalItemsCount } = pagination;
+  const to = Math.min(currentPage * itemsPerPage, totalItemsCount);
+  const from = to - (itemsPerPage - 1);
 
   return (
     <div className="flex items-center justify-end">
@@ -26,7 +26,7 @@ const Pagination = () => {
 
       <div className="mr-5">
         <span className=" text-second-text text-[13px]">
-          Showing {from}-{to} of {pagination.TotalItemsCount} items
+          Showing {from}-{to} of {pagination.totalItemsCount} items
         </span>
       </div>
 
