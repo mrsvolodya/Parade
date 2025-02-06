@@ -10,7 +10,7 @@ const ProductPage = () => {
       <p className="text-[15px] leading-[22px] mb-5">
         Review and manage the products available on the marketplace.
       </p>
-      <SearchBar onSearch={() => {}} />
+      <SearchBar />
       <ProductTable />
     </>
   );
