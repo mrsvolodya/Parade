@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useMemo, useState } from "react";
 import { ProductContext } from "../context/ProductContext";
 import { ProductProviderProps } from "../types/ProductProviderProps";
@@ -8,32 +9,40 @@ import { DEFAULT_PAGINATION } from "../constants/DEFAULT_PAGINATION";
 
 const ProductProvider = ({ children }: ProductProviderProps) => {
   const [products, setProducts] = useState<ProductType[]>([]);
-  const [page, setPage] = useState(1);
-  const [limit, setLimit] = useState(10);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage, setItemsPerPage] = useState(10);
 
   const [pagination, setPagination] =
     useState<PaginationType>(DEFAULT_PAGINATION);
 
   useEffect(() => {
     const loadProducts = async () => {
-      const { items, pagination } = await fetchProducts("", limit, page);
+      const { items, pagination } = await fetchProducts(
+        searchQuery,
+        itemsPerPage,
+        currentPage
+      );
       setProducts(items);
       setPagination(pagination);
     };
 
     loadProducts();
-  }, [limit, page]);
+  }, [itemsPerPage, currentPage, searchQuery]);
+
+  console.log(pagination);
 
   const values = useMemo(
     () => ({
-      page,
-      limit,
+      currentPage,
+      itemsPerPage,
       products,
       pagination,
-      setLimit,
-      setPage,
+      setItemsPerPage,
+      setSearchQuery,
+      setCurrentPage,
     }),
-    [page, pagination, limit]
+    [currentPage, pagination, itemsPerPage, setSearchQuery]
   );
 
   return (

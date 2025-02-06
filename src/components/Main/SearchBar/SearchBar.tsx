@@ -1,15 +1,13 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import SearchIcon from "../../../assets/icons/search-icon.svg";
+import { ProductContext } from "../../../context/ProductContext";
 
-interface SearchBarProps {
-  onSearch: (query: string) => void;
-}
-
-const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
+const SearchBar = () => {
+  const { setSearchQuery } = useContext(ProductContext);
   const [query, setQuery] = useState("");
 
   const handleSearch = () => {
-    onSearch(query);
+    setSearchQuery(query);
   };
 
   return (

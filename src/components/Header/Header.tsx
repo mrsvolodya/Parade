@@ -4,7 +4,7 @@ import UserProfile from "./UserProfile";
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between bg-header-bg h-20 px-5 sticky top-0">
+    <header className="flex items-center justify-between bg-header-bg min-h-20 px-5 sticky top-0 z-10">
       <div>
         <CompanyLogo />
       </div>

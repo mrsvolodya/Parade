@@ -48,4 +48,6 @@ body,
   --color-second-bg: #363f4f;
   --color-second-text: #222222;
   --color-border-color: #9a9fa7;
+  --color-bg-button: #e3e8f3;
+  --color-bg-hover-button: #f4c93f;
 }

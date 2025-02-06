@@ -21,7 +21,7 @@ export const fetchProducts = async (query = "", limit = 10, page = 1) => {
       : [];
 
     const items: ProductType[] = itemsArray.map((item) => ({
-      Id: item.id,
+      Id: item.Id,
       Image: item.Image,
       Name: item.Name,
       Category: item.Category || "Uncategorized",

@@ -1,11 +1,13 @@
+import { Dispatch, SetStateAction } from "react";
 import { PaginationType } from "./PaginationType";
 import { ProductType } from "./ProductType";
 
 export type ContextType = {
-  page: number;
-  limit: number;
+  currentPage: number;
+  itemsPerPage: number;
   products: ProductType[];
   pagination: PaginationType;
-  setPage: (v: number) => void;
-  setLimit: (v: number) => void;
+  setItemsPerPage: Dispatch<SetStateAction<number>>;
+  setSearchQuery: Dispatch<SetStateAction<string>>;
+  setCurrentPage: Dispatch<SetStateAction<number>>;
 };
