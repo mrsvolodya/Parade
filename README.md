@@ -1,26 +1,25 @@
 # React + TypeScript + Vite
-Product Table SPA
 
-Опис проекту
+# TEST TASK FOR Upgrade Parade
 
-Цей проект є Single Page Application (SPA), який відображає таблицю продуктів з можливістю пошуку та пагінації. Дані отримуються з API.
+# Product Table SPA
+# Task Description
+This project is a Single Page Application (SPA) that displays a product table with search and pagination functionality. Data is retrieved from an API.
 
-Функціональність
+# Requirements
+ # Display a table of products
+ # Implement search functionality based on user input
+ # Implement pagination for convenient product navigation
+ # Allow users to select the number of items per page
 
-Відображення таблиці з продуктами
+# type: GET
+# Query params: 
+# query: string
+# limit: number
+# page: number
+# prop_ModuleId=2053 (required)
+# GET https://mammoth-testing-api.webinone.com/items
 
-Пошук продуктів по введеному запиту
+# Query Parameters
 
-Пагінація для зручного перегляду списку товарів
-
-Вибір кількості елементів на сторінці
-
-Отримання даних із зовнішнього API
-
-Використане API
-
-Endpoint
-
-GET https://mammoth-testing-api.webinone.com/items
-
-Query Parameters
+# Live Preview: https://mrsvolodya.github.io/Parade
