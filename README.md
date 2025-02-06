@@ -21,5 +21,5 @@ This project is a Single Page Application (SPA) that displays a product table wi
 # GET https://mammoth-testing-api.webinone.com/items
 
 # Query Parameters
-
+# Figma https://www.figma.com/design/QVv3GewLwqYz9Y1BcUiYmd/test-task?node-id=1-305&t=HsqiaXtlNJoUDNDU-0
 # Live Preview: https://mrsvolodya.github.io/Parade
