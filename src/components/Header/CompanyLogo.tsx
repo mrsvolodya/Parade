@@ -1,7 +1,7 @@
 const CompanyLogo = () => (
-  <h1 className="text-[26px]">
+  <h1 className="text-[15px] sm:text-[26px]">
     Company{" "}
-    <span className="uppercase leading-[22px] font-semibold text-yellow">
+    <span className="uppercase sm:leading-[22px] font-semibold text-yellow">
       Logo
     </span>
   </h1>
